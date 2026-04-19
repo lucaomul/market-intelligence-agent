@@ -1,50 +1,145 @@
-AI Market Intelligence & Strategic Research Agent
-An autonomous research agent designed to crawl, scrape, and analyze market trends using LLMs. Unlike simple news aggregators, this tool performs deep content extraction to provide structured business intelligence.
+# 📊 AI Market Intelligence & Strategic Research Agent
 
-Core Features
-Deep Scraping: Instead of analyzing just headlines or snippets, the agent visits the source URL to extract the full article body.
+> Automated market research powered by LLMs — from raw news to structured business intelligence in seconds.
 
-Structured Intelligence: Utilizes OpenAI's JSON mode for consistent data mapping and reliable output.
+---
 
-Risk & Sentiment Scoring: Quantifies market sentiment and identifies potential risks for business stakeholders.
+## 🚀 Overview
 
-Dual Reporting: Generates professional Excel reports for end-users and raw JSON files for technical integrations.
+This project is an autonomous AI agent designed to **collect, analyze, and transform unstructured news data into actionable market intelligence**.
 
-Technical Stack
-Language: Python 3.12 (Optimized for M4 Apple Silicon)
+Unlike traditional aggregators that rely on headlines or summaries, this system performs **deep content extraction** and applies LLM-based reasoning to generate structured insights for business decision-making.
 
-AI Engine: OpenAI GPT-4o API
+---
 
-Libraries: newspaper3k, pandas, requests, openpyxl
+## 🧠 What It Does
 
-Architecture: Object-Oriented (OOP) for scalability.
+* Crawls and collects real-time news data from external sources
+* Extracts full article content (not just headlines)
+* Processes data using LLMs to generate structured intelligence
+* Outputs both **business-ready reports** and **machine-readable data**
 
-Installation & Setup
-1. Install Dependencies
+---
 
+## ⚙️ Core Features
+
+### 🔍 Deep Content Extraction
+
+* Scrapes full article bodies using `newspaper3k`
+* Avoids shallow analysis based on headlines or snippets
+
+### 🧾 Structured Intelligence (JSON Mode)
+
+* Uses OpenAI structured outputs for consistent, reliable data mapping
+* Enables downstream integrations and automation pipelines
+
+### 📉 Risk & Sentiment Scoring
+
+* Classifies market sentiment (Bullish / Bearish / Neutral)
+* Identifies and extracts potential risk factors from text
+
+### 📊 Dual Output System
+
+* **Excel Reports** → for business stakeholders
+* **Raw JSON Files** → for technical integrations and pipelines
+
+---
+
+## 🧪 Output Data Model
+
+Each processed article generates:
+
+* **Credibility Score** → evaluation of source quality and depth
+* **Market Sentiment** → directional signal (Bullish / Bearish / Neutral)
+* **Strategic Outlook** → long-term implications and trend analysis
+* **Risk Factors** → extracted threats and downside scenarios
+* **Executive Summary** → concise, decision-ready brief
+
+---
+
+## 🛠️ Tech Stack
+
+* **Language:** Python 3.12
+* **AI Engine:** OpenAI GPT-4o (structured outputs / JSON mode)
+* **Data Processing:** pandas
+* **Scraping:** newspaper3k
+* **APIs:** requests (NewsAPI integration)
+* **Reporting:** openpyxl (Excel generation)
+* **Architecture:** Object-Oriented Design (modular & scalable)
+
+---
+
+## ⚡ How It Works
+
+1. Fetches news articles via API
+2. Extracts full article content
+3. Processes text using LLM (structured output mode)
+4. Generates:
+
+   * structured JSON data
+   * formatted Excel reports
+
+---
+
+## ▶️ Getting Started
+
+### Install dependencies
+
+```bash id="g1k8ap"
 pip install openai requests pandas openpyxl newspaper3k lxml_html_clean
+```
 
-2. Configuration
+### Configure API keys
 
-Open market_intelligence.py and provide your API credentials:
+```python id="z8h2nr"
 OPENAI_KEY = "your_openai_key_here"
 NEWS_API_KEY = "your_news_api_key_here"
+```
 
-3. Run the Agent
+### Run the agent
 
+```bash id="y7k3lm"
 python3 market_intelligence.py
+```
 
-Output Data Points
-The agent populates the following fields in the generated reports:
+---
 
-Credibility Score: AI's evaluation of the source content and depth.
+## 📈 Why This Matters
 
-Market Sentiment: Bullish, Bearish, or Neutral assessment.
+Most market analysis tools:
 
-Strategic Outlook: Long-term perspective and trend predictions.
+* rely on surface-level summaries
+* lack structured outputs
+* require manual interpretation
 
-Risk Factors: Potential threats or downsides identified in the text.
+This system:
 
-Executive Summary: A concise brief designed for high-level decision-makers.
+* **automates the full research pipeline**
+* produces **decision-ready intelligence**
+* enables **integration into larger data systems**
 
-Maintained by Luca Craciun.
+---
+
+## 🔮 Future Improvements
+
+* Real-time streaming pipeline (instead of batch processing)
+* Multi-source aggregation beyond NewsAPI
+* Historical trend analysis & time-series tracking
+* Dashboard integration (Power BI / Streamlit)
+* Evaluation benchmarks vs manual research workflows
+
+---
+
+## 👤 Author
+
+**Luca Craciun**
+AI Automation Engineer
+
+GitHub: https://github.com/lucaomul
+LinkedIn: https://www.linkedin.com/in/gabriel-luca-craciun-25ba95295
+
+---
+
+## ⭐ If you find this useful
+
+Star the repo or fork it to build your own intelligence pipelines.
